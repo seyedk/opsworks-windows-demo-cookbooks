@@ -17,6 +17,6 @@ batch "install npm version #{node['opsworks_nodejs']['npm_version']}" do
 end
 
 #npmrc does not exist when backed-in node is never called.
-#batch "copy npmrc" do
+batch "copy npmrc" do
 #  code 'copy "%programfiles(x86)%\\nodejs\\node_modules\\npm\\npmrc" "%appdata%\\npm\\node_modules\\npm\\npmrc"'
-#end
+end
